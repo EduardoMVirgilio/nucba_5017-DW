@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios y Semantica | Clase 02</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nucba Tech</h1>
+        <nav>
+            <a href="#presentacion" title="Enlace para ver la presentación">Inicio</a>
+            <a href="#nosotros" title="Enlace para conocernos">Nosotros</a>
+            <a href="#posteos" title="Enlace para ver los posteos">Blog</a>
+            <a href="#contacto" title="Enlace para ir a la información de contacto">Contacto</a>
+        </nav>
+    </header>
+    <main id="presentacion">
+        <h2>Conocé las ultimas noticias del mundo Tech</h2>
+        <h3>Todo acerca de la WEB, HTML, CSS, JS ...</h3>
+        <a href="https://instagram.com" target="_blank" title="Enlace para ir a el perfil de Instragram">Puedes entrar a
+            nuestras redes</a>
+        <picture><img src="./assets/imagen.png" alt="imagen de refrencia del blog" /></picture>
+    </main>
+
+    <section id="nosotros">
+        <header>
+            <h2>Conocenos más</h2>
+            <p>Desde 2024, con amor desde Argentina para el mundo </p>
+        </header>
+        <article>
+            <picture><img /></picture>
+        </article>
+        <article>
+            <picture><img /></picture>
+        </article>
+        <article>
+            <picture><img alt="" /></picture>
+        </article>
+    </section>
+
+    <section id="posteos">
+        <header>
+            <h2>Conocenos más sobre HTML</h2>
+        </header>
+        <ul>
+            <li></li>
+        </ul>
+        <aside>
+            <ul>
+                <li><a href="" target="_blank"></a></li>
+            </ul>
+        </aside>
+    </section>
+
+    <form id="contacto">
+        <fieldset>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Complete con su nombre completo" required>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" placeholder="Complete con su correo electronico" required>
+            <label for="celular">Celular</label>
+            <input type="tel" id="celular">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje"></textarea>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Enviar Formulario</button>
+            <button type="reset">Borrar información</button>
+        </fieldset>
+    </form>
+
+    <footer>
+        <h2>Gracias por ver nuestro sitio | NUCBA Tech | 2024</h2>
+    </footer>
+
+
+
+
+</body>
+
+</html>

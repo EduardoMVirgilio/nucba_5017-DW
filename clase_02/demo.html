@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos al lado oscuro</title>
+</head>
+
+<body>
+    <h2>Formularios</h2>
+    <form>
+        <fieldset>
+            <legend>Datos Usuario</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" />
+            <br /> <br />
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" placeholder="Ingrese su apellido" />
+            <br /> <br />
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" placeholder="Ingrese su edad" />
+            <br /> <br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Crea tu cuenta</legend>
+            <label for="correo">Email:</label>
+            <input type="email" id="correo" placeholder="Ingrese su email" />
+            <br /><br />
+            <label for="pass">Contraseña:</label>
+            <input type="password" id="pass" placeholder="Ingrese su contraseña" required />
+            <br /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Marcar varias opciones</legend>
+            <label for="checkbox1">Soy un input de tipo checkbox</label>
+            <input type="checkbox" id="checkbox1" value="check1" />
+            <br /><br />
+            <label for="checkbox2">Soy otro input de tipo checkbox</label>
+            <input type="checkbox" id="checkbox2" value="check2" checked />
+            <br /><br />
+        </fieldset>
+
+
+        <fieldset>
+            <legend>
+                Gusto de helado favorito:
+            </legend>
+            <input type="radio" name="gustos" id="chocolate" value="chocolate" />
+            <label for="chocolate">Chocolate</label> <br /><br />
+            <input type="radio" name="gustos" id="dulce-de-leche" value="dulce-de-leche" />
+            <label for="dulce-de-leche">Dulce de Leche</label> <br /><br />
+            <input type="radio" name="gustos" id="limon" value="limon" />
+            <label for="limon">Limón</label> <br /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                ¿Jugamos?:
+            </legend>
+            <select>
+                <option value="piedra">Piedra</option>
+                <option value="papel">Papel</option>
+                <option value="tijera">Tijera</option>
+            </select>
+            <br /><br />
+        </fieldset>
+
+        <fieldset>
+            <label for="texto">Soy un area de texto</label> <br />
+            <textarea id="texto" cols="20" rows="10"
+                placeholder="Escribe tu comentario">Era hace mucho tiempo...</textarea><br /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Todos se parecen, pero no sirven para lo mismo</legend>
+            <input type="submit" value="Soy un botón" /> <!-- Pero no debes utilizarme -->
+            <button type="button">Puedes hacerme click</button> <!-- Pero no hago nada solo con JS -->
+            <button type="submit">Soy otro botón</button> <!-- Debes utilizarme cuando quieras enviar el formulario -->
+            <button type="reset">Borrar datos</button> <!-- Debes utilizarme cuando reseteas el formulario-->
+        </fieldset>
+    </form>
+    <hr />
+    <h2>Semantica</h2> <!-- COMO NO UTILIZAR DIVs -->
+
+    <header>
+        <h1>Mi Marca</h1>
+    </header>
+    <nav> <!-- No hace falta usar UL o OL adentro -->
+        <a href=""></a>
+    </nav>
+
+    <main></main>
+    <aside>
+        <header></header>
+    </aside>
+    <section>
+        <header></header>
+        <article>
+            <picture><img src="" alt=""></picture>
+            <div>
+                <h3>Nombre del Producto</h3>
+                <p>Precio</p>
+            </div>
+            <form>
+                <button type="button"></button>
+            </form>
+        </article>
+        <ul>
+            <li>
+                <picture><img src="" alt=""></picture>
+                <article>
+                    <h3>Nombre del Producto</h3>
+                    <p>Precio</p>
+                </article>
+                <form>
+                    <button type="button"></button>
+                </form>
+            </li>
+        </ul>
+        <ol></ol>
+        <footer></footer>
+    </section>
+
+    <form></form>
+    <picture><img src="" alt=""></picture>
+    <figure>
+        <img src="" alt="">
+        <video src=""></video>
+        <audio src=""></audio>
+        <iframe src="" frameborder="0"></iframe>
+        <figcaption>Sobre que es mi imagen</figcaption>
+    </figure>
+    <footer></footer>
+
+</body>
+
+</html>

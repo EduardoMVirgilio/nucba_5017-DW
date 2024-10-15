@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "mister_grape";
+  src: url("../fonts/mister_grape_-_personal_use-webfont.woff2") format("woff2"),
+    url("../fonts/mister_grape_-_personal_use-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

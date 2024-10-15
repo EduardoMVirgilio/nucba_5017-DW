@@ -1,0 +1,166 @@
+.container {
+  background-color: #282828;
+  padding: 16px;
+  border-radius: 16px;
+  width: fit-content;
+  margin: 20px 0;
+}
+
+.text-span {
+  color: #ff005c;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #6b7280;
+  margin: 20px 0;
+}
+
+.caja-mediana {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #e11d48;
+  margin: 20px 0;
+}
+.caja-grande {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #8c54fb;
+}
+
+.bg-color {
+  background-color: rgb(220, 20, 60);
+}
+
+.bg-img {
+  background-image: url("../img/bg-pattern.jpg");
+  /* Explicar que acomodamos la imagen con estas dos props */
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-repeat {
+  background-image: url("../img/bg-repeat.png");
+  background-repeat: repeat;
+}
+
+.bg-attach {
+  background-image: url("../img/bg-pattern.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 50%;
+}
+
+.bg-position {
+  background-image: url("../img/messi.webp");
+  background-position: center;
+}
+
+.bg-size {
+  background-size: cover;
+  /* background-size: contain; */
+}
+
+.color p {
+  margin: 0;
+  color: crimson;
+}
+
+/* Box shadow */
+.caja-shadow {
+  background: #8c54fb;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.offsetXY {
+  box-shadow: 10px 10px; /* offset-x | offset-y */
+}
+
+.blurRadius {
+  box-shadow: 10px 10px 5px;
+}
+
+.spreadRadius {
+  box-shadow: 0px 0px 5px 5px;
+}
+
+.color-shadow {
+  box-shadow: 0px 0px 5px 5px rgba(14, 195, 65, 1);
+}
+
+.inset {
+  box-shadow: inset -10px 10px 0px 5px rgba(0, 0, 0, 0.75);
+}
+
+/* Tipografias */
+/*Las importaciones suelen ir arriba de todo en el archivo css , pero para fines prácticos lo mostramos acá */
+
+.font-family {
+  font-family: "Indie Flower", cursive;
+}
+
+.font-weight {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+}
+
+.font-style {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
+
+.font-size {
+  font-size: 2rem; /* 1rem = 16px  */
+}
+
+.letter-spacing {
+  letter-spacing: 10px;
+}
+
+.word-spacing {
+  word-spacing: 10px;
+}
+
+.line-height {
+  line-height: 55px;
+}
+
+.text-align {
+  text-align: center; /* left | right | center | justify */
+}
+
+.text-transform {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.text-decoration {
+  text-decoration: none;
+}
+
+/* Listas */
+
+.list-none {
+  list-style: circle;
+}
+.list-position {
+  list-style-type: circle;
+  list-style-position: outside;
+  background-color: crimson;
+}
+
+.list-img {
+  list-style-image: url("../img/messi-list-img.jpg");
+  list-style-position: inside;
+}
