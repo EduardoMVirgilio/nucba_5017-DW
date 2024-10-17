@@ -5,6 +5,8 @@
 * {
   margin: 0;
   padding: 0;
+  border: none;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -12,7 +14,6 @@
 body {
   background: #131415;
   color: #f9fafb;
-  font-family: "Poppins", sans-serif;
   padding: 3rem;
   max-width: 1000px;
 }

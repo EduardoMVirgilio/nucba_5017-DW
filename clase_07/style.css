@@ -30,7 +30,8 @@
 }
 
 .scroll {
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .auto {
@@ -39,9 +40,9 @@
 
 /* Padding */
 .padding {
-  border-radius: 1rem;
+  border-radius: 10px;
   background-color: #8c54fb;
-  padding: 20px 20px 40px 40px;
+  padding: 20px 40px;
   /*
   También se puede usar:
   padding-top: 20px;
@@ -81,6 +82,9 @@
 }
 
 /* margin */
+.especial {
+  margin: 0 auto;
+}
 .box {
   width: 100px;
   height: 100px;
@@ -93,7 +97,7 @@
 }
 
 .margin {
-  margin: 20px 20px 40px 40px;
+  margin: 10px auto;
   /*
   También se puede usar:
   margin-top: 20px;
@@ -107,6 +111,8 @@
   border: 1px solid #8c54fb;
   border-radius: 0.5rem;
   padding: 1rem;
+  position: relative;
+  z-index: 10;
 }
 
 .mb {
@@ -118,16 +124,12 @@
 }
 
 .inline {
-  border: 1px solid crimson;
-  margin: 2rem 0rem;
-  padding: 1rem;
-  border-radius: 0.4rem;
+  background-color: #8c54fb;
 }
 
 /* positions */
 .relative {
   position: relative;
-  left: 100px;
 }
 
 .absolute-container {
@@ -141,13 +143,17 @@
 }
 
 .absolute {
+  width: 50px;
+  height: 50px;
   position: absolute;
-  left: 20px;
-  bottom: 10px;
+  top: -25px;
+  right: -25px;
+  border-radius: 50%;
 }
 
 .fixed {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  top: 10px;
+  left: 10px;
+  z-index: 0;
 }
