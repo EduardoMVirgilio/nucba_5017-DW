@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: rgb(242, 241, 241);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+#first {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+  order: 0;
+  align-self: center;
+}
+
+#actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex: 1;
+  order: 2;
+  align-self: center;
+}
+
+header > a {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  flex: 1;
+  order: 1;
+  text-align: center;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: crimson;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header > a img {
+  width: auto;
+  height: 3rem;
+}
+nav a {
+  text-decoration: none;
+  color: crimson;
+  font-family: sans-serif;
+  font-weight: bold;
+}
