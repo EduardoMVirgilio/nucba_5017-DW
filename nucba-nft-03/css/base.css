@@ -20,7 +20,8 @@
   --fire: #ff6d00;
   --electric: #64d3ff;
   --gradient-header: linear-gradient(to bottom, #121e3c, var(--background));
-  --grandient-text-1: linear-gradient(to top, #30cfd0, #c43ad6);
+  --grandient-text: linear-gradient(to top, #30cfd0, #c43ad6);
+  --grandient-price: linear-gradient(to left, #30cfd0, #c43ad6);
   /* Tipografias */
   --montse: "Montserrat", sans-serif;
   --pop: "Poppins", sans-serif;
