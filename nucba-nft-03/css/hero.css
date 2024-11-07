@@ -15,7 +15,9 @@
 
 #content h2 {
   font-size: 3rem;
-  color: var(--text-white);
+  color: transparent;
+  background-image: var(--grandient-text);
+  background-clip: text;
   width: calc(75% - 6rem);
   font-weight: 800;
 }
@@ -91,4 +93,14 @@
 #card ul li:last-child span:last-child {
   color: var(--text-white);
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  #content {
+    align-items: center;
+    text-align: center;
+  }
+  #card {
+    display: none;
+  }
 }

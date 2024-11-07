@@ -20,6 +20,7 @@
   --fire: #ff6d00;
   --electric: #64d3ff;
   --gradient-header: linear-gradient(to bottom, #121e3c, var(--background));
+  --gradient-cart: linear-gradient(to top, #121e3c, var(--background));
   --grandient-text: linear-gradient(to top, #30cfd0, #c43ad6);
   --grandient-price: linear-gradient(to right, #30cfd0, #c43ad6);
   /* Tipografias */

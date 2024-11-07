@@ -4,6 +4,7 @@ body > header {
   top: 0;
   left: 0;
   background-color: var(--secondary);
+  background-image: var(--gradient-header);
   display: flex;
   padding: 1rem 2rem;
   justify-content: center;
@@ -55,6 +56,57 @@ body > header > form label svg {
   height: 100%;
   fill: var(--text-white);
 }
-#btnCart {
+body > header > form input[type="checkbox"] {
   display: none;
+}
+body > header > form label[for="btnMenu"] svg {
+  stroke: var(--text-white);
+}
+body > header > form label[for="btnMenu"] {
+  display: none;
+}
+
+body > header > form nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body > header {
+    justify-content: space-between;
+  }
+  body > header > nav {
+    display: none;
+  }
+  body > header > form {
+    gap: 1rem;
+  }
+  body > header > form label[for="btnMenu"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body > header > form nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: calc(100% - 3rem);
+    border: 0.05rem solid var(--electric);
+    border-top: none;
+    background-color: var(--nav-bg);
+    top: 3rem;
+    left: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+  body > header > form nav a {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  body > header > form nav a:first-child {
+    color: var(--text-white);
+  }
 }
