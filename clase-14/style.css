@@ -54,6 +54,12 @@
 .focus-input:focus {
   background: crimson;
 }
+.focus-input:focus:invalid {
+  background: crimson;
+}
+.focus-input:valid {
+  background: rgb(20, 220, 133);
+}
 
 /* Cajas */
 .flex {
@@ -103,7 +109,7 @@
   background-color: #8c54fb;
 }
 /* nth-child-number-n */
-.nth-child-number-n .caja:nth-child(3n + 1) {
+.nth-child-number-n .caja:nth-child(2n + 1) {
   background-color: #8c54fb;
 }
 
@@ -120,8 +126,34 @@
 }
 
 /* before */
-.before::before {
-  content: "(🤩) ";
+#text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  position: relative;
+  color: snow;
+}
+#text span {
+  z-index: 1;
+  color: transparent;
+  background-image: linear-gradient(to left, snow 30%, black 40%, snow 40%);
+  background-clip: text;
+  padding: 0.25rem;
+}
+#text::before {
+  content: " ";
+  display: inline-flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  aspect-ratio: 1;
+  background-image: radial-gradient(crimson 50%, snow 50%);
+  z-index: 0;
+  border-radius: 50%;
 }
 
 /* after */
