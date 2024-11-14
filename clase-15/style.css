@@ -1,0 +1,297 @@
+.container {
+  background-color: #282828;
+  display: flex;
+  padding: 16px;
+  border-radius: 16px;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.text-span {
+  color: #ff005c;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  background: crimson;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Translate */
+
+/*Creamos la animación*/
+@keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}
+
+/*Usamos la animación*/
+.translateX {
+  opacity: 0;
+  transform: translateX(0);
+  /*
+  animation-name: translateX;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  */
+  animation: translateX 1s ease-in-out infinite alternate;
+}
+
+/*Creamos la animación*/
+@keyframes translateY {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+/*Usamos la animación*/
+.translateY {
+  animation: translateY 2s infinite;
+}
+
+/*Creamos la animación*/
+@keyframes translate {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(100%, 20px);
+  }
+}
+
+/*Usamos la animación*/
+.translate {
+  animation: translate 2s infinite;
+}
+
+/* Rotate */
+
+/*Creamos la animación*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*Usamos la animación*/
+.rotate {
+  animation: rotate 2s infinite;
+}
+
+/*Creamos la animación*/
+@keyframes rotate-negative {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/*Usamos la animación*/
+.rotate-negative {
+  animation: rotate-negative 2s infinite;
+  background-color: #ad29ca;
+}
+
+/* Scale */
+
+/*Creamos la animación*/
+@keyframes scaleX {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*Usamos la animación*/
+.scaleX {
+  transform-origin: center;
+  animation: scaleX 2s infinite;
+}
+
+/*Creamos la animación*/
+@keyframes scaleY {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1.1);
+  }
+}
+
+/*Usamos la animación*/
+.scaleY {
+  animation: scaleY 2s infinite;
+  background-color: #ad29ca;
+}
+
+/*Creamos la animación*/
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/*Usamos la animación*/
+.scale {
+  animation: scale 2s infinite;
+}
+
+/* Skew */
+
+/*Creamos la animación*/
+@keyframes skewX {
+  0% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(10deg);
+  }
+}
+
+/* Usamos la animación */
+.skewX {
+  animation: skewX 2s infinite;
+}
+
+/*Creamos la animación*/
+@keyframes skewY {
+  0% {
+    transform: skewY(0deg);
+  }
+  100% {
+    transform: skewY(10deg);
+  }
+}
+
+/* Usamos la animación */
+.skewY {
+  animation: skewY 2s infinite;
+  background-color: #ad29ca;
+}
+
+/*Creamos la animación*/
+@keyframes skew {
+  0% {
+    transform: skew(0deg);
+  }
+  100% {
+    transform: skew(10deg);
+  }
+}
+
+/* Usamos la animación */
+.skew {
+  animation: skew 2s infinite;
+}
+
+/* transition */
+.transition-duration {
+  /*Se ponen tanto aca como en hover para que haya transición tanto en hover como al salir del hover*/
+  transition-property: all;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.transition-duration:hover {
+  background-color: #ad29ca;
+  width: 250px;
+  height: 250px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+/* transition timing function */
+
+.transition-timing {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.transition-timing:hover {
+  background: #ad29ca;
+  width: 220px;
+  height: 220px;
+  transform: rotate(10deg);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+/* transition timing delay*/
+.transition-delay {
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  transition-delay: 50ms;
+  cursor: pointer;
+}
+.transition-delay:hover {
+  background: #ad29ca;
+  width: 220px;
+  height: 220px;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  transition-delay: 50ms;
+}
+
+/* transition shorthand */
+.transition-shorthand {
+  transition: all 300ms 50ms ease-out;
+  cursor: pointer;
+}
+.transition-shorthand:hover {
+  background: #ad29ca;
+  width: 220px;
+  height: 220px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animada {
+  animation: fadeInDown 1s;
+}
