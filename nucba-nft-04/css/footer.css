@@ -1,0 +1,26 @@
+body > footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+}
+body > footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+body > footer nav a {
+  color: var(--text-gray);
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
+}
+body > footer p {
+  color: var(--text-gray);
+  font-weight: 300;
+  font-size: 1rem;
+}
+body > footer p strong {
+  font-weight: 800;
+}
