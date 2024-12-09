@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --purple-100: rgb(218, 207, 252);
+  --purple-500: rgb(118, 80, 220);
+  --yellow-100: rgb(249, 238, 225);
+  --yellow-500: rgb(255, 203, 107);
+  --white: rgb(252, 252, 252);
+  --black: rgb(18, 18, 18);
+}
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
