@@ -1,1 +1,188 @@
 @import url("base.css");
+
+body > main {
+  width: 100%;
+  max-width: 768px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: start;
+  gap: 1rem;
+  grid-template-areas:
+    "create social social schedule2"
+    "create social social schedule2"
+    "ai manage schedule schedule2"
+    "ai audience followers followers";
+}
+
+#social {
+  grid-area: social;
+  background-color: var(--purple-500);
+  color: var(--white);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  & h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  & ul {
+    display: flex;
+    height: 3rem;
+    list-style: none;
+    padding: 0.25rem;
+    gap: 1rem;
+    justify-content: space-between;
+    & li {
+      aspect-ratio: 1/1;
+      & svg {
+        width: 100%;
+        height: 100%;
+        fill: var(--yellow-500);
+      }
+    }
+  }
+}
+
+#manage {
+  grid-area: manage;
+  aspect-ratio: 1/1;
+  background-color: var(--white);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+}
+#schedule {
+  grid-area: schedule;
+  aspect-ratio: 1/1;
+  background-color: var(--white);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-size: 0.7rem;
+}
+#schedule_2 {
+  grid-area: schedule2;
+  background-color: var(--purple-100);
+  color: var(--black);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-size: 0.7rem;
+  & h2 {
+    font-size: 2rem;
+  }
+}
+
+#content {
+  grid-area: followers;
+  background-color: var(--purple-500);
+  color: var(--white);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}
+#audience {
+  grid-area: audience;
+  background-color: var(--white);
+  height: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-size: 0.7rem;
+  & h2 {
+    font-size: 1.5rem;
+  }
+}
+#create {
+  grid-area: create;
+  background-color: var(--yellow-100);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-size: 0.7rem;
+  & a {
+    background-color: var(--purple-500);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.75rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+}
+#ai {
+  grid-area: ai;
+  background-color: var(--yellow-500);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  body > main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body > main p {
+    text-align: center;
+  }
+  body > main h2 {
+    text-align: center;
+  }
+  body > main > article {
+    width: 100%;
+  }
+}
